@@ -26,7 +26,7 @@ if (!isset($_SESSION['username'])) {
             /* height: 100px; */
             bottom: 0;
             width: 100%;
-            background: #198754;
+            background: #1fb359;
             padding: 10px 0;
             color: #fff;
             font-family: Arial, Helvetica, sans-serif;
@@ -92,6 +92,26 @@ if (!isset($_SESSION['username'])) {
                         break;
                     case "user-update";
                         include "../user/user_update.php";
+                        break;
+                    // matakuliah    
+                    case "matakuliah-show";
+                        include "../matakuliah/matakuliah_show.php";
+                        break;
+
+                    case "matakuliah-add";
+                        include "../matakuliah/matakuliah_add.php";
+                        break;
+
+                    case "matakuliah-edit";
+                        include "../matakuliah/matakuliah_edit.php";
+                        break;
+
+                    case "matakuliah-delete";
+                        include "../matakuliah/matakuliah_delete.php";
+                        break;
+
+                    case "matakuliah-update";
+                        include "../matakuliah/matakuliah_update.php";
                         break;
                 }
 
